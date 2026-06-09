@@ -1,2 +1,8 @@
 # Dry-Fish-Market-project
 This project integrates transfer learning and real-world deployment through an API, demonstrating an end-to-end pipeline from dataset construction to model inference and application-level integration for sustainable AI-driven market systems.
+## Project Overview
+The dried fish market is a vital economic source for coastal communities in Bangladesh, but it faces critical challenges such as species misclassification, product substitution, and inconsistent pricing. These issues reduce transparency and threaten the long-term sustainability of the market.
+This project proposes an image-based deep learning framework to improve transparency and fairness in the dried fish supply chain. We apply transfer learning using multiple pre-trained models, including MobileNetV3-Small, ResNet50, Vision Transformer (ViT), and ConvNeXt-Tiny, for two tasks: dry fish species classification and fair price range prediction.
+A dataset of 1,251 images was expanded to 6,255 samples across 7 classes using data augmentation techniques. The models were fine-tuned and evaluated to assess their discriminative performance in a resource-constrained setting.
+Among the evaluated models, MobileNetV3-Small achieved an accuracy of 96.83%, demonstrating suitability for lightweight deployment. ConvNeXt-Tiny achieved the highest performance with an accuracy of 99.63%, showing the effectiveness of the proposed framework.
+To support real-world usability, we developed an API that allows users to upload an image of dried fish and receive species classification along with an estimated fair price range. This system aims to improve market transparency, reduce fraudulent practices, and support fair trade in coastal fish markets.
